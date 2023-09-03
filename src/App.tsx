@@ -1,54 +1,46 @@
 import './App.css'
-import { useState } from 'react';
-import logo from './assets/react.svg';
+import { useState } from 'react'
+import Navbar from './components/Navbar'
+import { Task } from './interfaces/Task'
+import TaskList from './components/TaskList'
+import TaskForm from './components/TaskForm'
 
 interface Props {
-  title: number;
+  title?: string
 }
 
-interface Task {
-  id: number;
-  title: string;
-  description: string;
-  completed: boolean;
-}
-
-function App({title}: Props) {
-
-  const [tasks, setTasks] = useState <Task[]>([
+function App({ title }: Props) {
+  const [tasks, setTasks] = useState<Task[]>([
     {
       id: 1,
-      title: "tarea",
-      description: "Learn React",
-      completed: true
-    }
+      title: 'tarea',
+      description: 'Learn React',
+      completed: true,
+    },
   ])
 
-
+  const addANewTask = (task : Task ) => setTasks([...tasks, {...task , id: Math.random() * 1000, completed: false}])
+  
+  const deleteATask = (id: number) => setTasks(tasks.filter((task) => task.id !== id))
 
   return (
-    <div className='bg-dark  text-white' style={{height: "100vh"}} >
+    <div className="bg-dark  text-white" style={{ height: '100vh' }}>
+      <Navbar />
+      <h1>{title || ''}</h1>
 
-      <nav className='navbar navbar-dark bg-primary' >
-        <div className='container-fluid' >
-          <a href="">
-            <img src={logo} className="App-logo" alt="logo" width={40} height={40} /> 
-          </a>
-        </div>
-      </nav>
 
-      <h1>{title} </h1>  
-
-      {
-        tasks.map((task) => (
-          <div key={task.id} className={task.completed ? "completed" : ""} >
-            <h1>{task.title}</h1>
-            <p>{task.description}</p>
-            <p>{task.completed}</p>
-            <hr/>
+      <main className="container p-4 ">
+        <div className="row">
+          <div className="col-md-4" style={{ margin: 'auto', padding: '10px'}}>
+            <TaskForm addANewTask={addANewTask} />
           </div>
-        ) )
-      }
+          <div className="col-md-8 row " style={{ margin: 'auto'}}>
+            <div className="row">
+              <TaskList tasks={tasks} deleteATask={deleteATask} />
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   )
 }
