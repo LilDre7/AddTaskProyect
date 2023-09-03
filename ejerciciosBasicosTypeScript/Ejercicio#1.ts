@@ -3,6 +3,8 @@
 Declara una variable edad de tipo number y asígnale tu edad.
 Declara una variable esEstudiante de tipo boolean y asígnale true si eres estudiante o false si no lo eres. */
 
+const nombre: string = "LilDree";
+
 
 // 🧨 Ejercicio 2: Funciones🧨  //
 /* Crea una función llamada saludar que tome un parámetro nombre de tipo string y devuelva un saludo en formato "¡Hola, [nombre]!".
