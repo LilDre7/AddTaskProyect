@@ -1,4 +1,4 @@
-# Mi Aplicación de Tareas con React y Vite
+# Mi Aplicación de Tareas con React, Vite y TypeScript
 
 ![Logo de la Aplicación](/public/vite.svg)
 
@@ -31,11 +31,9 @@ Asegúrate de tener instalado lo siguiente en tu sistema:
 git clone https://github.com/LilDre7/AddTaskProyect.git
 
 Accede al directorio del proyecto:
-
 cd mi-app-de-tareas
 
 Instala las dependencias:
-
 npm install
 
 Uso
@@ -48,8 +46,17 @@ Docker
 También puedes ejecutar la aplicación dentro de un contenedor Docker. Asegúrate de tener Docker instalado y sigue estos pasos:
 
 Construye la imagen Docker:
-
 docker build -t mi-app-de-tareas .
 
+Ejecuta el contenedor:
+docker run -d -p 8080:3000 mi-app-de-tareas
+
+Contribución
+Si deseas contribuir a este proyecto, ¡estamos abiertos a colaboraciones! Siéntete libre de abrir un problema o enviar una solicitud de extracción.
+
+Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
+
+Hecho con ❤️ por Lil Dree. Puedes encontrarme en GitHub y LinkedIn.
 
 ```
