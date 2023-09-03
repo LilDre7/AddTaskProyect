@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# Mi Aplicación de Tareas con React y Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo de la Aplicación](link-to-your-logo-image.png)
 
-Currently, two official plugins are available:
+Esta es una sencilla aplicación de tareas creada por Lil Dree para mi portafolio. Utiliza React, Vite, TypeScript, y Bootstrap para ofrecer una interfaz de usuario amigable para añadir, eliminar y crear tareas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- Añadir nuevas tareas.
+- Marcar tareas como completadas.
+- Eliminar tareas.
+- Interfaz de usuario atractiva y responsive gracias a Bootstrap.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Capturas de Pantalla
 
-- Configure the top-level `parserOptions` property like this:
+![Captura de Pantalla 1](screenshots/screenshot1.png)
+![Captura de Pantalla 2](screenshots/screenshot2.png)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Requisitos
+
+Asegúrate de tener instalado lo siguiente en tu sistema:
+
+- [Node.js](https://nodejs.org/) (v14 o superior)
+- [Docker](https://www.docker.com/)
+
+## Instalación
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/mi-app-de-tareas.git
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
