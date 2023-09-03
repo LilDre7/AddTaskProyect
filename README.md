@@ -13,8 +13,8 @@ Esta es una sencilla aplicación de tareas creada por Lil Dree para mi portafoli
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](screenshots/screenshot1.png)
-![Captura de Pantalla 2](screenshots/screenshot2.png)
+![Captura de Pantalla 1](/public/img/captura1.png)
+![Captura de Pantalla 2](/public/img/captura2.png)
 
 ## Requisitos
 
