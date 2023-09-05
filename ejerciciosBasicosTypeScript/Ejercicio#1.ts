@@ -22,12 +22,20 @@ console.log(saludar(nombre));
 Declara un array de strings llamado colores y asigna algunos colores.
 Declara un array de booleanos llamado verdaderoFalso y asigna algunos valores true y false. */
 
+const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const colors: string[] = ["red", "blue", "green", "yellow", "orange"];
+const trueFalse: boolean[] = [true, false]
 
 // 🧨 Ejercicio 4: Clases🧨  //
 /* Crea una clase llamada Persona con propiedades nombre y edad.
 Agrega un constructor a la clase Persona que tome los valores de nombre y edad como parámetros y los asigna a las propiedades correspondientes.
 Crea una instancia de la clase Persona con tu nombre y edad.
 Imprime los valores de la instancia creada. */
+
+const persons = {
+
+
+}
 
 
 
