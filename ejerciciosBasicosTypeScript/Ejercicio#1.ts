@@ -15,14 +15,12 @@ Llama a la función saludar pasando tu nombre como argumento e imprime el result
 function saludar(nombre: string) {
   return `¡Hola, ${nombre}!`;
 }
-console.log("Hello World")
-// console.log(saludar(nombre));
+console.log(saludar(nombre));
 
 // 🧨 Ejercicio 3: Tipos de Arrays🧨  //
 /* Declara un array de números llamado numeros y asigna algunos números.
 Declara un array de strings llamado colores y asigna algunos colores.
 Declara un array de booleanos llamado verdaderoFalso y asigna algunos valores true y false. */
-
 
 
 // 🧨 Ejercicio 4: Clases🧨  //
