@@ -32,11 +32,22 @@ Agrega un constructor a la clase Persona que tome los valores de nombre y edad c
 Crea una instancia de la clase Persona con tu nombre y edad.
 Imprime los valores de la instancia creada. */
 
-const persons = {
+class Persona {
+  nombre: string;
+  edad: number;
 
+  constructor(nombre: string, edad: number) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
 
+  saludar(): void {
+    console.log(`Hola mi nombres es ${this.nombre} y tengo ${this.edad} años`)
+  }
 }
 
+const persona1 = new Persona("Alvaro" , 20)
+console.log(persona1.saludar());
 
 
 // 🧨 Ejercicio 5: Interfaces🧨  //
