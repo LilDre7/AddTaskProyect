@@ -1,4 +1,4 @@
-// 🧨 Ejercicio 1: Declaración de Variables🧨  //
+// 🧨 Ejercicio 1: Declaración de Variables🧨  // ⚗️
 /* Declara una variable nombre de tipo string y asígnale tu nombre.
 Declara una variable edad de tipo number y asígnale tu edad.
 Declara una variable esEstudiante de tipo boolean y asígnale true si eres estudiante o false si no lo eres. */
@@ -12,7 +12,11 @@ let isStudent: boolean = true;
 /* Crea una función llamada saludar que tome un parámetro nombre de tipo string y devuelva un saludo en formato "¡Hola, [nombre]!".
 Llama a la función saludar pasando tu nombre como argumento e imprime el resultado. */
 
-
+function saludar(nombre: string) {
+  return `¡Hola, ${nombre}!`;
+}
+console.log("Hello World")
+// console.log(saludar(nombre));
 
 // 🧨 Ejercicio 3: Tipos de Arrays🧨  //
 /* Declara un array de números llamado numeros y asigna algunos números.
