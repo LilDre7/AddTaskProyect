@@ -19,22 +19,26 @@ function App({ title }: Props) {
     },
   ])
 
-  const addANewTask = (task : Task ) => setTasks([...tasks, {...task , id: Math.random() * 1000, completed: false}])
-  
-  const deleteATask = (id: number) => setTasks(tasks.filter((task) => task.id !== id))
+  const addANewTask = (task: Task) =>
+    setTasks([
+      ...tasks,
+      { ...task, id: Math.random() * 1000, completed: false },
+    ])
+
+  const deleteATask = (id: number) =>
+    setTasks(tasks.filter(task => task.id !== id))
 
   return (
     <div className="bg-dark  text-white" style={{ height: '100vh' }}>
       <Navbar />
       <h1>{title || ''}</h1>
 
-
       <main className="container p-4 ">
         <div className="row">
-          <div className="col-md-4" style={{ margin: 'auto', padding: '10px'}}>
+          <div className="col-md-4" style={{ margin: 'auto', padding: '10px' }}>
             <TaskForm addANewTask={addANewTask} />
           </div>
-          <div className="col-md-8 row " style={{ margin: 'auto'}}>
+          <div className="col-md-8 row " style={{ margin: 'auto' }}>
             <div className="row">
               <TaskList tasks={tasks} deleteATask={deleteATask} />
             </div>
