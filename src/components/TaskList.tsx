@@ -13,6 +13,7 @@ const TaskList = ({ tasks, deleteATask }: Props) => {
       {tasks.map(task => (
         <div key={task.id} className={task.completed ? 'completed' : ''}>
           <div className="col col-md-6">
+            {/* Revisar el codigo de aquis */}
             <TaskCard tasks={task} deleteATask={deleteATask} />
           </div>
           <hr />
