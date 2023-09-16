@@ -4,18 +4,16 @@ import TaskCard from './TaskCard'
 
 interface Props {
   tasks: Task[]
-  deleteATask: (id: number) => void;
+  deleteATask: (id: number) => void
 }
 
-const TaskList = ({ tasks  , deleteATask}: Props) => {
+const TaskList = ({ tasks, deleteATask }: Props) => {
   return (
     <>
       {tasks.map(task => (
         <div key={task.id} className={task.completed ? 'completed' : ''}>
-          <div
-            className="col-md-4 pb-2"
-          >
-            <TaskCard task={task} deleteATask={deleteATask} />
+          <div className="col-md-4 pb-2">
+            <TaskCard tasks={task} deleteATask={deleteATask} />
           </div>
           <hr />
         </div>

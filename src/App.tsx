@@ -38,7 +38,7 @@ function App({ title }: Props) {
           <div className="col-md-4" style={{ margin: 'auto', padding: '10px' }}>
             <TaskForm addANewTask={addANewTask} />
           </div>
-          <div className="col-md-8 row " style={{ margin: 'auto' }}>
+          <div className="col-md-8" style={{ margin: 'auto' }}>
             <div className="row">
               <TaskList tasks={tasks} deleteATask={deleteATask} />
             </div>
