@@ -7,7 +7,10 @@ interface Props {
 
 const TaskCard = ({ tasks, deleteATask }: Props) => {
   return (
-    <div className="card card-body bg-secondary rounded-0 text-black">
+    <div
+      className="card card-body bg-secondary rounded-0 text-black"
+      style={{ display: 'flex' }}
+    >
       <h1>{tasks.title}</h1>
       <p>{tasks.description}</p>
       <p>{tasks.completed}</p>

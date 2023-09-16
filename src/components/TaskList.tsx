@@ -12,7 +12,14 @@ const TaskList = ({ tasks, deleteATask }: Props) => {
     <>
       {tasks.map(task => (
         <div key={task.id} className={task.completed ? 'completed' : ''}>
-          <div className="col-md-4 pb-2">
+          <div
+            className="col-md-4 pb-2"
+            style={{
+              display: 'flex',
+              width: '50%',
+              alignContent: 'center',
+            }}
+          >
             <TaskCard tasks={task} deleteATask={deleteATask} />
           </div>
           <hr />
