@@ -9,16 +9,16 @@ interface Props {
 type HandleInputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 
 const initialState = {
-  title: "",
-  description: "",
+  title: '',
+  description: '',
 }
 
-
 const TaskForm = ({ addANewTask }: Props) => {
-
   const [task, setTask] = useState(initialState)
 
-  const handleInputChange = ({ target: { name, value }, }: HandleInputChange) => {
+  const handleInputChange = ({
+    target: { name, value },
+  }: HandleInputChange) => {
     setTask({ ...task, [name]: value })
   }
 
@@ -31,7 +31,7 @@ const TaskForm = ({ addANewTask }: Props) => {
   return (
     <div className="card card-body bg-secondary text-dark">
       <h2>Add Task Here 📖 </h2>
-      <form action="" onSubmit={handleNewTask} >
+      <form action="" onSubmit={handleNewTask}>
         <input
           type="text"
           placeholder="Write a title"
@@ -54,6 +54,7 @@ const TaskForm = ({ addANewTask }: Props) => {
           Add Task
           <TbPencilPlus />
         </button>
+        <p>{}</p>
       </form>
     </div>
   )

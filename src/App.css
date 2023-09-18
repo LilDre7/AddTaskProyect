@@ -3,7 +3,5 @@ body {
 }
 
 .containTasks {
-  display: grid;
-  background-color: red;
-  width: max-content;
+ background-color: blueviolet;
 }
