@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(56, 54, 54);
+}
+
+.containTasks {
+  display: grid;
+  background-color: red;
+  width: max-content;
+}

@@ -29,16 +29,16 @@ function App({ title }: Props) {
     setTasks(tasks.filter(task => task.id !== id))
 
   return (
-    <div className="bg-dark  text-white" style={{ height: '100vh' }}>
+    <div className="text-white">
       <Navbar />
       <h1>{title || ''}</h1>
 
       <main className="container p-4 ">
         <div className="row">
-          <div className="col-md-4" style={{ margin: 'auto', padding: '10px' }}>
+          <div className="col-md-4">
             <TaskForm addANewTask={addANewTask} />
           </div>
-          <div className="col-md-8" style={{ margin: 'auto' }}>
+          <div className="containTasks col-md-4">
             <div className="row">
               <TaskList tasks={tasks} deleteATask={deleteATask} />
             </div>

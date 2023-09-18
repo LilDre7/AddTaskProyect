@@ -10,7 +10,7 @@ const intentos = 0
 // Función para pedir al usuario que adivine el número
 function adivinaElNumero() {
   while (intentos < intentosMaximos) {
-    const intento: null | string | number | boolean = prompt(
+    const intento = prompt(
       `Intento ${
         intentos + 1
       }/${intentosMaximos}: Adivina el número (entre 1 y 100):`,
