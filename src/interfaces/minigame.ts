@@ -10,13 +10,14 @@ const intentos = 0
 // Función para pedir al usuario que adivine el número
 function adivinaElNumero() {
   while (intentos < intentosMaximos) {
-    const intento = prompt(
+    const intento: null | string | number | boolean = prompt(
       `Intento ${
         intentos + 1
       }/${intentosMaximos}: Adivina el número (entre 1 y 100):`,
     )
 
     const numeroAdivinado = parseInt(intento)
+    console.log(numeroAdivinado)
 
     if (
       isNaN(numeroAdivinado) ||
